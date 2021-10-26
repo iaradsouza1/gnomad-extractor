@@ -28,12 +28,6 @@ def main():
     parser_extract.add_argument('-o', '--output', dest='fname', default=None, required=True, action='store',
                                 help='result file name')
 
-    # Print lines
-    parser_print= subparser.add_parser('print', help='Print VCf position')
-    parser_print.add_argument('-f', '--file', dest='file', action='store', default=None, required=False)
-    parser_print.add_argument('-i', '--index', dest='index', default=None, required=True, action='store',
-                                help='Index file created with the  index command')
-    parser_print.add_argument('-p', '--position', dest='print_pos', action='store', default=None, required=False)
 
     # Extract annotation
     parser_annotation = subparser.add_parser('annotation', help='get annotations from LoF mutations')
@@ -44,7 +38,6 @@ def main():
                                 help='path to create "annotation/" directory')
     parser_annotation.add_argument('-o', '--output', dest='fname', default=None, required=True, action='store',
                                 help='result file name')
-
 
     args = parser.parse_args()
 
