@@ -1,6 +1,5 @@
 # gnomad-extractor
-Tool to parse VCF from gnomad project and extract LoF SNPs.
-From the VCF file processed and provided by gnomad Project, extract functional annotation. 
+Tool to (1) parse the VCF file from gnomad project and (2) specifically extract the loss-of-functions SNPs. It also extracts the functional annotation of each LoF SNP.
 
 3 Steps:
 - Create index with `index`;
